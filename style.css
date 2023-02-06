@@ -1,0 +1,72 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  background-image: url("../Assets/Background.png");
+  
+}
+.iphone {
+  width: 30vw;
+  height: 73vh;
+  margin-top: -15%;
+}
+section {
+  display: flex;
+} 
+
+.principal {
+  
+  justify-content: center;
+  margin-top: 3%;
+  width: 100%;
+  background-color: #140404;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 10px 10px 10px 1px rgb(0, 0, 0);
+}
+.Gradie {
+  background-color: rgb(21, 41, 41);
+  width: 30%;
+}
+
+.In {
+  padding: 2rem;
+}
+
+form input {
+  height: 6vh;
+  width: 80%;
+}
+h1 {
+  height: 20px;
+  font-size: 6ch;
+  justify-content: space-around;
+  color: #ffffffd5;
+}
+.Sign {
+  background-color: #fff;
+  width: 30%;
+}
+span {
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+}
+button {
+  background-color: blue;
+  color: #fff;
+  height: 60px;
+}
+
+.login {
+    font-size: 5ch;
+    color: #140404;
+}
+
+.InSign div {
+    margin: 4rem;
+}
