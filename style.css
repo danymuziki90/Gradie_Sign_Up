@@ -122,7 +122,7 @@ span {
   .container {
     display: inline-block;
     height: 100%;
-    width: 80vw;
+    width: 100%;
     box-shadow: none;
   }
   .Gradie {
@@ -146,7 +146,7 @@ span {
     top: 0px;
   }
 
-  .login {
+  div .login {
     position: absolute;
     padding-left: 6%;
     heigh: 50%;
