@@ -1,34 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url("../Assets/Background.png");
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url("Assets/Background.png");
+  background-size: cover;
+  transition: 0.4s;
 }
 
-.principal {
+.container {
+  box-shadow: 10px 13px 16px rgb(0, 0, 0), 10px 13px 10px rgba(0, 0, 0, 0.74);
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  background-color: black;
-  justify-content: center;
-  width: 80vw;
-  height: 80vh;
-  margin-left: 10%;
-  margin-top: 5%;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
+
 .Gradie {
-  background-color: darkcyan;
+  background-color: rgb(31, 49, 49);
   width: 50%;
   height: 100%;
-  margin-left: -19%;
-  margin-top: 0%;
 }
 .In {
   margin-top: 0%;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 3%;
+  padding-top: 3%;
   text-align: center;
   color: white;
 }
@@ -36,39 +43,138 @@ body {
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
 }
-.In p{
-  font-size: 20px;
+.In p {
+  font-size: 2vh;
   font-family: "Times New Roman", Times, serif;
+  margin-right: 8rem;
 }
 
-.iphone{
-  position: fixed;
-  width: 30%;
-  height: 65%;
-  margin-left: 70px;
-  margin-top: 1px;
-
+.iphone {
+  position: absolute;
+  height: 70vh;
+  width: 40%;
+  top: 0px;
 }
-.login {
-  background-color: #fff;
+.allLogin {
+  margin-left: 10%;
+}
+div .login {
+  background-color: #ffffff;
   width: 50%;
-  height: 89.%;
-  margin-right: -19%;
-  margin-top: 0%;
-  padding-left: 5%;
-  padding-top: 5%;
+  height: 100%;
+  color: rgb(0, 0, 0);
 }
-.inlogin {
-  color: black;
-  margin-bottom: 4rem;
-  margin-left: 4rem;
-  font-size: 35px;
+div .inlogin {
+  font-size: 220%;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
 }
-.button{
-  margin-left: 4rem;
-  margin-top: 2rem;
-  background-color: blue;
-  width: 50%;
-  height: 50px;
+.button {
+  margin-top: -0.5rem;
+  background-color: rgb(31, 49, 49);
+  width: 60%;
+  font-size: 1.5em;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 10px 15px 15px 5px rgb(0, 0, 0);
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(165, 11, 11);
 
+  align-items: center;
+}
+.input {
+  height: 30px;
+  width: 80%;
+}
+
+.condition {
+  width: 80%;
+}
+.button p {
+  font-size: 0.5em;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+span {
+  color: blue;
+}
+
+/*others scren size */
+
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: inline-block;
+    height: 100%;
+    width: 80vw;
+    box-shadow: none;
+  }
+  .Gradie {
+    height: 50%;
+    width: 100vw;
+  }
+  .Gradie h1 {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 30%;
+  }
+  .Gradie p {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 15%;
+  }
+  .iphone {
+    position: absolute;
+    height: 50vh;
+    width: 90%;
+    top: 0px;
+  }
+
+  .login {
+    position: absolute;
+    padding-left: 6%;
+    heigh: 50%;
+    width: 100%;
+  }
+  .inlogin {
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 1rem;
+  }
+  .button {
+    width: 90%;
+    height: 40px;
+    font-size: 2em;
+  }
+  .input {
+    width: 90%;
+    padding: 1rem;
+  }
+  form p {
+    margin-bottom: 1rem;
+  }
+
+  .condition {
+    width: 90%;
+    font-size: 0.7em;
+  }
+  .button p {
+    font-size: 1ch;
+  }
 }
