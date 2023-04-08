@@ -90,7 +90,7 @@ div .inlogin {
 }
 .input {
   height: 30px;
-  width: 80%;
+  width: 75%;
 }
 
 .condition {
@@ -176,5 +176,6 @@ span {
   }
   .button p {
     font-size: 1ch;
+    margin-top: 0.5rem;
   }
 }
